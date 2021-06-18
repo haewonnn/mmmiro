@@ -1,0 +1,67 @@
+
+
+/*  1 a 오른쪽으로  */
+.pic1 {
+    animation-name: a;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes a {
+    0%   {transform: translate(0px, 0px)}
+    50%  {transform: translate(0px, 20px)}
+    100%  {transform: translate(0px, 0px)}
+  }
+
+/*  2 b 왼쪽으로 */
+  .pic2 {
+    animation-name: b;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes b {
+    0%   {transform: translate(0px, 0px)}
+    50%  {transform: translate(40px, 0px)}
+    100%  {transform: translate(0px, 0px)}
+  }
+
+/*  3 c 위로 */
+  .pic3 {
+    animation-name: c;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes c {
+    0%   {transform: translate(0px, 0px)}
+    50%  {transform: translate(0px, -30px)}
+    100%  {transform: translate(0px, 0px)}
+  }
+
+/*  4 d 아래로 */
+  .pic4 {
+    animation-name: d;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes d {
+    0%   {transform: translate(0px, 0px)}
+    50%  {transform: translate(0px, 20px)}
+    100%  {transform: translate(0px, 0px)}
+  }
+
+
+/*  5 e 왼쪽 아래 대각선으로 */
+  .pic5 {
+    animation-name: e;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes e {
+    0%   {transform: translate(0px, 0px)}
+    50%  {transform: translate(40px, 0px)}
+    100%  {transform: translate(0px, 0px)}
+  }

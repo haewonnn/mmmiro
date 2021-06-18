@@ -1,0 +1,130 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta name="viewport" content="width = 1050, user-scalable = no" />
+<script type="text/javascript" src="js/jquery.min.1.7.js"></script>
+<script type="text/javascript" src="js/modernizr.2.5.3.min.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> 미로 </title>
+
+
+<link rel='stylesheet' href='css/miro.css'>
+<link rel='stylesheet' href='css/animation-miro.css'>
+
+<style>
+
+
+body{
+			width:100%; 
+			height: 100%; 
+			background-color : black;
+		}
+</style>
+
+
+</head>
+<body>
+
+<div class="flipbook-viewport">
+	<div class="container">
+		<div class="flipbook top">
+			<div style="background-image:url(pages/000.png)"></div>
+			<div style="background-image:url(pages/01.png)"></div>
+			<div style="background-image:url(pages/02.png)"></div>
+			<div style="background-image:url(pages/03.png)"></div>
+			<div style="background-image:url(pages/04.png)"></div>
+			<div style="background-image:url(pages/05.png)"></div>
+			<div style="background-image:url(pages/06.png)"></div>
+			<div style="background-image:url(pages/07.png)"></div>
+			<div style="background-image:url(pages/08.png)"></div>
+			<div style="background-image:url(pages/09.png)"></div>
+			<div style="background-image:url(pages/10.png)"></div>
+			<div style="background-image:url(pages/11.png)"></div>
+			<div style="background-image:url(pages/12.png)"></div>
+			<div style="background-image:url(pages/0000.png)"></div>
+		</div>
+	</div>
+</div>
+
+
+<div class="pic1">
+ <img src="pic/1.png" width="1000">
+</div>
+
+<div class="pic2">
+	<img src="pic/2.png" width="350">
+   </div>
+
+   <div class="pic3">
+	<img src="pic/3.png" width="430">
+   </div>
+
+   <div class="pic4">
+	<img src="pic/4.png" width="670">
+   </div>
+
+   <div class="pic5">
+	<img src="pic/5.png" width=530">
+   </div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+function loadApp() {
+
+	// Create the flipbook
+
+	$('.flipbook').turn({
+			// Width
+
+			width:922,
+			
+			// Height
+
+			height:600,
+
+			// Elevation
+
+			elevation: 50,
+			
+			// Enable gradients
+
+			gradients: true,
+			
+			// Auto center this flipbook
+
+			autoCenter: true
+
+	});
+}
+
+// Load the HTML4 version if there's not CSS transform
+
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['js/turn.js'],
+	nope: ['js/turn.html4.min.js'],
+	both: ['css/basic.css'],
+	complete: loadApp
+});
+
+</script>
+
+</body>
+</html>
